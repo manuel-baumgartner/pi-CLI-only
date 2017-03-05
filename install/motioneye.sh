@@ -21,7 +21,7 @@ sudo pip install motioneye
 sudo mkdir -p /etc/motioneye
 sudo cp /usr/local/share/motioneye/extra/motioneye.conf.sample /etc/motioneye/motioneye.conf
 
-mkdir -p /var/lib/motioneye
+sudo mkdir -p /var/lib/motioneye
 
 sudo cp /usr/local/share/motioneye/extra/motioneye.systemd-unit-local /etc/systemd/system/motioneye.service
 sudo systemctl daemon-reload
