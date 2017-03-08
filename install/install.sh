@@ -16,5 +16,5 @@ chmod +x plex.sh
 
 # motioneye
 wget https://raw.githubusercontent.com/manuel-baumgartner/pi-CLI-only/master/install/motioneye.sh
-chmod +x motioneye.sh
-./motioneye.sh
+sudo chmod +x motioneye.sh
+sudo ./motioneye.sh
