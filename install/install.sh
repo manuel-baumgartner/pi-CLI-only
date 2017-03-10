@@ -1,22 +1,17 @@
 #bin/bash
 
-#vars
-$INSTALL=/tmp  # installation folder
-
-cd INSTALL
 sudo apt-get update & sudo apt-get -y upgrade
 
 mkdir install
 cd install
 
-sudo su
 
 # enable ssh
-touch /boot/ssh
+sudo touch /boot/ssh
 
 # disable bluetooth and wifi
 wget https://raw.githubusercontent.com/manuel-baumgartner/pi-CLI-only/master/etc/modprobe.d/raspi-blacklist.conf
-cp raspi-blacklist.conf /etc/modprobe.d/raspi-blacklist.conf
+sudo cp raspi-blacklist.conf /etc/modprobe.d/raspi-blacklist.conf
 
 # plex
 wget https://raw.githubusercontent.com/manuel-baumgartner/pi-CLI-only/master/install/plex.sh
@@ -28,4 +23,4 @@ wget https://raw.githubusercontent.com/manuel-baumgartner/pi-CLI-only/master/ins
 chmod +x motioneye.sh
 ./motioneye.sh
 
-reboot
+
