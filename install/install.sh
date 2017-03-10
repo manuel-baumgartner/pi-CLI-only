@@ -1,7 +1,7 @@
 #bin/bash
 
 #vars
-$INSTALL="/tmp"  # installation folder
+$INSTALL=/tmp  # installation folder
 
 cd INSTALL
 sudo apt-get update & sudo apt-get -y upgrade
